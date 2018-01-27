@@ -1,0 +1,36 @@
+{% extends "misago/base.html" %}
+{% load i18n %}
+
+
+{% block title %}
+{% if misago_settings.forum_index_title %}
+{{ misago_settings.forum_index_title }}
+{% else %}
+{{ misago_settings.forum_name }}
+{% endif %}
+{% endblock title %}
+
+
+{% block meta-description %}{{ misago_settings.forum_index_meta_description }}
+
+<p class="noscript-message">
+  {% trans "To translate application Click here:" %}
+</p>
+<div id="google_translate_element" ></div><script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
+      
+
+{% endblock meta-description %}
+
+
+{% block content %}
+<div class="container">
+  <p class="lead">This is Django-rendered forum index template.</p>
+  <p>Neat, huh?</p>
+</div>
+
+{% endblock content %}

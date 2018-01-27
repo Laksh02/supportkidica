@@ -1,0 +1,1 @@
+@"c:\users\laksh\documents\projects\misago-master\env\scripts\python.exe" "c:\users\laksh\documents\projects\misago-master\env\Scripts\markdown_py" %*
